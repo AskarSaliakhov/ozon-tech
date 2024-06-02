@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozon Progress Bar</title>
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="shortcut icon" href="src/assets/ozon.jpg">
+</head>
+<body>
+<div class="container">
+    <div class="progress__container">
+        <svg class="progress__ring">
+            <circle
+                    class="progress__ring__background"
+                    stroke="#eff3f6"
+                    stroke-width="20"
+                    fill="transparent"
+                    r="90"
+                    cx="100"
+                    cy="100"
+            />
+            <circle
+                    class="progress__ring__circle"
+                    stroke="#005bff"
+                    stroke-width="20"
+                    fill="transparent"
+                    r="90"
+                    cx="100"
+                    cy="100"
+            />
+        </svg>
+        <div id="progress--text">0%</div>
+    </div>
+    <div class="controls">
+        <div class="control__item__input">
+            <input type="checkbox"/>
+            <input
+                    id="progress--input"
+                    type="number"
+                    pattern="\d*"
+            >
+            <p id="info">Value</p>
+        </div>
+        <div class="control__item">
+            <input type="checkbox" id="animated--switch"/>
+            <label for="animated--switch"></label>
+            <p id="info">Animation</p>
+        </div>
+        <div class="control__item">
+            <input type="checkbox" id="hidden--switch"/>
+            <label for="hidden--switch"></label>
+            <p id="info">Hide</p>
+        </div>
+    </div>
+</div>
+</body>
+<script defer src="src/index.js"></script>
+</html>
